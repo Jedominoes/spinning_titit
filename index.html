@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spinning dick</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        #output {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        #hidden-message {
+            color: red;
+            font-size: 1.2em;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1><strong>TITIT</strong></h1>
+    <img src="titit.png" alt="titit" data-rotate="90">
+    <script>
+        function checkInput() {
+            const input = document.getElementById('inputField').value.trim().toLowerCase();
+            const outputDiv = document.getElementById('output');
+            const hiddenMessage = document.getElementById('hidden-message');
 
+            if (input === 'hanger') {
+                outputDiv.innerHTML = '<a href="https://linkmix.co/34533930" target="_blank">Click here for the link</a>';
+                hiddenMessage.style.display = 'none';  // Hide hidden message
+            } else if (input === 'amogus_so_titit') {
+                outputDiv.innerHTML = 'yesus kristus aaaaaaaaaaaaaaa';
+                hiddenMessage.style.display = 'block';  // Show hidden message
+            } else {
+                outputDiv.innerHTML = 'Invalid input. Please try again.';
+                hiddenMessage.style.display = 'none';  // Hide hidden message
+            }
+        }
+    </script>
+</body>
+</html>
