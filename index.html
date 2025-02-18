@@ -19,28 +19,31 @@
             font-size: 1.2em;
             display: none;
         }
+        button{
+        border: none;
+        cursor: pointer;
+        appearance: none;
+        background-color: inherit;
+         transition: transform .7s ease-in-out;
+        margin-left:10px;
+
+      }
     </style>
 </head>
 <body>
     <h1><strong>TITIT</strong></h1>
-    <img src="titit.png" alt="titit" data-rotate="90">
+    <div>
+      <button type="titit">
+        <img src="titit.png" alt="titit" border="0" />
+      </button>
+        <p id="titite"></p>
+    </div>
     <script>
         function checkInput() {
-            const input = document.getElementById('inputField').value.trim().toLowerCase();
-            const outputDiv = document.getElementById('output');
-            const hiddenMessage = document.getElementById('hidden-message');
-
-            if (input === 'hanger') {
-                outputDiv.innerHTML = '<a href="https://linkmix.co/34533930" target="_blank">Click here for the link</a>';
-                hiddenMessage.style.display = 'none';  // Hide hidden message
-            } else if (input === 'amogus_so_titit') {
-                outputDiv.innerHTML = 'yesus kristus aaaaaaaaaaaaaaa';
-                hiddenMessage.style.display = 'block';  // Show hidden message
-            } else {
-                outputDiv.innerHTML = 'Invalid input. Please try again.';
-                hiddenMessage.style.display = 'none';  // Hide hidden message
+            if(titit.isClicked() == True){
+                var text = document.getElementById("titite");
+                text.innerText("TIIT KUNING"
             }
-        }
     </script>
 </body>
 </html>
